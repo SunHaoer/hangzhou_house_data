@@ -25,6 +25,7 @@ class Hz5i5jSpider(scrapy.Spider):
     def parse_info(self, response):
         item = {}
         try:
+            item['community_name'] = '名门府'
             data = response.xpath('//div[@class="main container"]')
             number_info_str = data.xpath('string(//span[@class="del-houseid"])').get()
             item['house_num'] = number_info_str.split('|')[0].split('：')[1].strip()
@@ -32,6 +33,7 @@ class Hz5i5jSpider(scrapy.Spider):
                 item['check_num'] = number_info_str.split('|')[1].split('：')[1].strip()
             else:
                 item['check_num'] = '-'
+            item['source'] = '5i5j'
             item['price'] = data.xpath('string(//div[@class="de-price fl"])').get().replace('万', '').strip()
             item['unit_price'] = data.xpath('string(//div[@class="danjia"]/span)').get().strip()
             item['floor'] = data.xpath('string(//div[@class="jlyoubai fl jlyoubai1"]/p[@class="houseinfor2"])').get().split('/')[0].strip()
