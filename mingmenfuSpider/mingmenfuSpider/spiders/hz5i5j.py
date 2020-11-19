@@ -4,13 +4,12 @@ import scrapy
 
 class Hz5i5jSpider(scrapy.Spider):
     name = 'hz5i5j'
-    # allowed_domains = ['5i5j.com']
+    allowed_domains = ['5i5j.com']
     start_urls = ['https://hz.5i5j.com/xq-ershoufang/100000000039911/']
     info_url = 'https://hz.5i5j.com'
     encoding = 'utf-8'
 
     def parse(self, response):
-        print('################')
         print(response.body)
         selectors = response.xpath('//ul[@class="pList"]/li')
         for selector in selectors:
@@ -20,7 +19,6 @@ class Hz5i5jSpider(scrapy.Spider):
                 yield scrapy.Request(self.info_url + href, callback=self.parse_info)
             except Exception as e:
                 print(e)
-        print('################')
 
     def parse_info(self, response):
         item = {}

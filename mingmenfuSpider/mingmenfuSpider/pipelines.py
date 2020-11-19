@@ -5,11 +5,8 @@
 
 
 # useful for handling different item types with a single interface
-import copy
-import logging
 
 import pymysql as pymysql
-
 
 class MingmenfuspiderPipeline:
 
@@ -39,24 +36,27 @@ class MingmenfuspiderPipeline:
 
 
     def process_item(self, item, spider):
+        try:
+            sql = f'''
+                            insert ignore into `house_info`(
+                            `community_name`,
+                            `check_num`,
+                            `house_num`,
+                            `source`,
+                            `price`,
+                            `unit_price`,
+                            `floor`,
+                            `area`,
+                            `date`
+                            )
+                            values ('%s','%s', '%s', '%s', '%s', '%s','%s', '%s', '%s')
+                    ''' % tuple((item['community_name'], item['check_num'], item['house_num'], item['source'],
+                                 item['price'], item['unit_price'], item['floor'], item['area'], item['date']))
 
-        sql = f'''
-                        insert ignore into `house_info`(
-                        `community_name`,
-                        `check_num`,
-                        `house_num`,
-                        `source`,
-                        `price`,
-                        `unit_price`,
-                        `floor`,
-                        `area`,
-                        `date`
-                        )
-                        values ('%s','%s', '%s', '%s', '%s', '%s','%s', '%s', '%s')
-                ''' % tuple((item['community_name'], item['check_num'], item['house_num'], item['source'], item['price'], item['unit_price'], item['floor'], item['area'], item['date']))
-
-        self.cursor.execute(sql)
-        self.db.commit()
-        # logging.info(self.spider.name + ": " + "insert into mysql success")
+            self.cursor.execute(sql)
+            self.db.commit()
+            # logging.info(self.spider.name + ": " + "insert into mysql success")
+        except Exception as e:
+            print(e)
 
         return item
