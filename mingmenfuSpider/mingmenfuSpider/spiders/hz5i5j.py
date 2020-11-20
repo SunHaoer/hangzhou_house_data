@@ -10,8 +10,7 @@ class Hz5i5jSpider(scrapy.Spider):
     encoding = 'utf-8'
 
     def parse(self, response):
-        print(response.body)
-        selectors = response.xpath('//ul[@class="pList"]/li')
+        selectors = response.xpath('//ul[@class="pList"]')[0].xpath('./li')
         for selector in selectors:
             try:
                 href = selector.xpath('./div[2]/div[1]/p[2]/a[2]/@href').get().split('#')[0]
