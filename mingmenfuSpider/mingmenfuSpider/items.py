@@ -15,4 +15,6 @@ class MingmenfuspiderItem(scrapy.Item):
     unit_price = scrapy.Field()    # 单价
     floor = scrapy.Field()    # 楼层位置
     area = scrapy.Field()    # 面积
+    status = scrapy.Field()    # 税费情况
+    publish_time = scrapy.Field()    # 发布时间
     date = scrapy.Field()    # 日期

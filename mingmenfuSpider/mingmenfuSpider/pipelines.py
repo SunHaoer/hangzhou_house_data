@@ -5,6 +5,7 @@
 
 
 # useful for handling different item types with a single interface
+import datetime
 
 import pymysql as pymysql
 
@@ -36,6 +37,8 @@ class MingmenfuspiderPipeline:
 
 
     def process_item(self, item, spider):
+        item = self.init_item(item)
+
         try:
             sql = f'''
                             insert ignore into `house_info`(
@@ -47,11 +50,13 @@ class MingmenfuspiderPipeline:
                             `unit_price`,
                             `floor`,
                             `area`,
+                            `status`,
+                            `publish_time`,
                             `date`
                             )
-                            values ('%s','%s', '%s', '%s', '%s', '%s','%s', '%s', '%s')
+                            values ('%s','%s', '%s', '%s', '%s', '%s','%s', '%s', '%s', '%s', '%s')
                     ''' % tuple((item['community_name'], item['check_num'], item['house_num'], item['source'],
-                                 item['price'], item['unit_price'], item['floor'], item['area'], item['date']))
+                                 item['price'], item['unit_price'], item['floor'], item['area'], item['status'], item['publish_time'], item['date']))
 
             self.cursor.execute(sql)
             self.db.commit()
@@ -59,4 +64,18 @@ class MingmenfuspiderPipeline:
         except Exception as e:
             print(e)
 
+        return item
+
+    def init_item(self, item):
+        item.setdefault('community_name', '名门府')
+        item.setdefault('check_num', '-')
+        item.setdefault('house_num', '-')
+        item.setdefault('source', '0')
+        item.setdefault('price', '0')
+        item.setdefault('unit_price', '0')
+        item.setdefault('floor', '-')
+        item.setdefault('area', '0')
+        item.setdefault('status', '-')
+        item.setdefault('publish_time', datetime.date.today())
+        item.setdefault('date', datetime.date.today())
         return item
