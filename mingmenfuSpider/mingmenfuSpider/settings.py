@@ -39,24 +39,24 @@ FEED_EXPORT_ENCODING = 'utf-8-sig'
 #TELNETCONSOLE_ENABLED = False
 
 # Override the default request headers:
-DEFAULT_REQUEST_HEADERS = {
-    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-    'Accept-Language': 'zh-CN,zh;q=0.9',
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36 SE 2.X MetaSr 1.0',
-    'Host': 'hz.5i5j.com',
-    'Referer': 'https://hz.5i5j.com/xq-ershoufang/100000000039911/',
-
-    # 'Accept-Encoding': 'gzip, deflate, br',
-    # 'Connection': 'keep-alive',
-    # 'Cookie': '_Jo0OQK=553CEFA6707169CD55812A7B0A18F9591C6D0C52C907A3D6D59E3C966C194E9FD66503AE1173873ED3BB7D0BC039FCB9D8B348145C104AE5660E5A5DF575333A0E0DE8682CA7D10E3B498FB9E3C853EFEE298FB9E3C853EFEE215D8BEE34E43E5C0GJ1Z1bQ==; PHPSESSID=p5748jqehmra091o11kg71h8qs; domain=hz'
-    # 'sec-ch-ua': '"Chromium";v="86", "\"Not\\A;Brand";v="99", "Google Chrome";v="86"',
-    # 'sec-ch-ua-mobile': '?0',
-    # 'Sec-Fetch-Dest': 'document',
-    # 'Sec-Fetch-Mode': 'navigate',
-    # 'Sec-Fetch-Site': 'same-origin',
-    # 'Sec-Fetch-User': '?1',
-    # 'Upgrade-Insecure-Requests': 1
-}
+# DEFAULT_REQUEST_HEADERS = {
+#     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+#     'Accept-Language': 'zh-CN,zh;q=0.9',
+#     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.87 Safari/537.36 SE 2.X MetaSr 1.0',
+#     'Host': 'hz.5i5j.com',
+#     'Referer': 'https://hz.5i5j.com/xq-ershoufang/100000000039911/',
+#
+#     # 'Accept-Encoding': 'gzip, deflate, br',
+#     # 'Connection': 'keep-alive',
+#     # 'Cookie': '_Jo0OQK=553CEFA6707169CD55812A7B0A18F9591C6D0C52C907A3D6D59E3C966C194E9FD66503AE1173873ED3BB7D0BC039FCB9D8B348145C104AE5660E5A5DF575333A0E0DE8682CA7D10E3B498FB9E3C853EFEE298FB9E3C853EFEE215D8BEE34E43E5C0GJ1Z1bQ==; PHPSESSID=p5748jqehmra091o11kg71h8qs; domain=hz'
+#     # 'sec-ch-ua': '"Chromium";v="86", "\"Not\\A;Brand";v="99", "Google Chrome";v="86"',
+#     # 'sec-ch-ua-mobile': '?0',
+#     # 'Sec-Fetch-Dest': 'document',
+#     # 'Sec-Fetch-Mode': 'navigate',
+#     # 'Sec-Fetch-Site': 'same-origin',
+#     # 'Sec-Fetch-User': '?1',
+#     # 'Upgrade-Insecure-Requests': 1
+# }
 
 # Enable or disable spider middlewares
 # See https://docs.scrapy.org/en/latest/topics/spider-middleware.html
