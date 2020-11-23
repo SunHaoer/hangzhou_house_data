@@ -6,7 +6,10 @@ import scrapy
 class HzkeSpider(scrapy.Spider):
     name = 'hzke'
     allowed_domains = ['ke.com']
-    start_urls = ['https://hz.ke.com/ershoufang/c1820027546685962/']
+    start_urls = [
+        'https://hz.ke.com/ershoufang/c1820027546685962/',    # 名门府
+        'https://hz.ke.com/ershoufang/c188390937162697/'    # 春江悦茗
+    ]
 
     def parse(self, response):
         selectors = response.xpath('//a[@class="VIEWDATA CLICKDATA maidian-detail"]')
@@ -17,14 +20,29 @@ class HzkeSpider(scrapy.Spider):
                 yield scrapy.Request(href, callback=self.parse_info)
             except Exception as e:
                 print(e)
+        hrefs = response.xpath('//div[@class="pagination_group_a"]/a/@href')
+
+        # 下一页
+        if self.start_urls.__contains__(response.url):
+            for href in hrefs:
+                href = response.urljoin(href.get())
+                print(href)
+                if href.endswith('/') == False:
+                    href = href + '/'
+                if self.start_urls.__contains__(href) == False:
+                    yield scrapy.Request(href, callback=self.parse)
+
 
     def parse_info(self, response):
         item = {}
         try:
             item['source'] = 'beike'
-            item['community_name'] = '名门府'
-            item['house_num'] = \
-            response.xpath('string(//div[@class="houseRecord"]/span[@class="info"])').get().split('\n')[0].strip()
+            community_str = response.xpath('//div[@class="intro clear"]').get()
+            if '名门府' in community_str:
+                item['community_name'] = '名门府'
+            elif '春江悦茗' in community_str:
+                item['community_name'] = '春江悦茗'
+            item['house_num'] = response.xpath('string(//div[@class="houseRecord"]/span[@class="info"])').get().split('\n')[0].strip()
 
             price_data = response.xpath('//div[@data-component="overviewIntro"]//div[@class="content"]/div[2]')
             item['price'] = price_data.xpath('string(./span[@class="total"])').get().strip()
