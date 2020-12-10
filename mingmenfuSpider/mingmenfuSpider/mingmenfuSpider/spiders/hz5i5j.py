@@ -1,11 +1,19 @@
 import datetime
 
 import scrapy
+from utils.tool import get_community_name
 
 class Hz5i5jSpider(scrapy.Spider):
     name = 'hz5i5j'
     allowed_domains = ['5i5j.com']
-    start_urls = ['https://hz.5i5j.com/xq-ershoufang/100000000039911/']
+    start_urls = [
+        'https://hz.5i5j.com/xq-ershoufang/100000000039911/',    # 名门府
+        'https://hz.5i5j.com/xq-ershoufang/100000000000680/',    # 华瑞晴庐
+        'https://hz.5i5j.com/xq-ershoufang/100000000001941/',    # 微风之城
+        # 'https://hz.5i5j.com/xq-ershoufang/100000000044155/',    # 望海潮
+        # 'https://hz.5i5j.com/xq-ershoufang/100000000044713/'    # 璟隽名邸
+
+    ]
     info_url = 'https://hz.5i5j.com'
     encoding = 'utf-8'
 
@@ -14,7 +22,20 @@ class Hz5i5jSpider(scrapy.Spider):
         for selector in selectors:
             try:
                 href = selector.xpath('./div[2]/div[1]/p[2]/a[2]/@href').get().split('#')[0]
+                print(href)
                 yield scrapy.Request(self.info_url + href, callback=self.parse_info)
+            except Exception as e:
+                print(e)
+
+        # 下一页
+        hrefs = response.xpath('//div[@class="pageSty rf"]/a')
+        for href in hrefs:
+            try:
+                if '下' in href.get():
+                    href = response.urljoin(href.xpath('./@href').get())
+                    print(href)
+                    yield scrapy.Request(href, callback=self.parse)
+                    break
             except Exception as e:
                 print(e)
 
@@ -22,8 +43,9 @@ class Hz5i5jSpider(scrapy.Spider):
         item = {}
         try:
             item['source'] = '5i5j'
-            item['community_name'] = '名门府'
             data = response.xpath('//div[@class="main container"]')
+            community_str = data.xpath('string(.//div[@class="zushous"]/ul[1]/li[1])').get()
+            item['community_name'] = get_community_name(community_str)
             number_info_str = data.xpath('string(.//span[@class="del-houseid"])').get()
             item['house_num'] = number_info_str.split('|')[0].split('：')[1].strip()
             if '核验编码' in number_info_str:

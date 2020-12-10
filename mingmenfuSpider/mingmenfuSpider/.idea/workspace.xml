@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="999cb40c-55f2-4e68-bfa0-d16b7744e290" name="Default Changelist" comment="贝壳爬虫翻页">
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/tool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spiders/hz5i5j.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/hz5i5j.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spiders/hzke.py" beforeDir="false" afterPath="$PROJECT_DIR$/spiders/hzke.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="JupyterTrust" id="fc66b304-613b-4983-913a-dd43bd266708" />
+  <component name="ProjectId" id="1kMnDeu0z2kVsTYAe5jUZY0kmRI" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../ProgramData/Anaconda3/venv" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\hsun\private\workspace\hangzhou_house_data\mingmenfuSpider\mingmenfuSpider" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.run (1)">
+    <configuration name="hzke" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mingmenfuSpider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/spiders" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/spiders/hzke.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mingmenfuSpider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mingmenfuSpider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mingmenfuSpider/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mingmenfuSpider" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.run (1)" />
+        <item itemvalue="Python.run" />
+        <item itemvalue="Python.hzke" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="999cb40c-55f2-4e68-bfa0-d16b7744e290" name="Default Changelist" comment="" />
+      <created>1605519209636</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605519209636</updated>
+      <workItem from="1605519210669" duration="12696000" />
+      <workItem from="1605605059643" duration="18377000" />
+      <workItem from="1605771177641" duration="30006000" />
+      <workItem from="1605860068544" duration="7559000" />
+      <workItem from="1606096045695" duration="427000" />
+      <workItem from="1606096486865" duration="38000" />
+      <workItem from="1606097394671" duration="22332000" />
+      <workItem from="1606293865435" duration="3232000" />
+      <workItem from="1606653350251" duration="803000" />
+      <workItem from="1606798030876" duration="5427000" />
+    </task>
+    <task id="LOCAL-00001" summary="爬虫获取名门府二手房信息">
+      <created>1605668051321</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605668051322</updated>
+    </task>
+    <task id="LOCAL-00002" summary="爬虫获取名门府二手房信息">
+      <created>1605668142981</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605668142981</updated>
+    </task>
+    <task id="LOCAL-00003" summary="5i5j数据入库">
+      <created>1605783297151</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605783297151</updated>
+    </task>
+    <task id="LOCAL-00004" summary="5i5j数据入库">
+      <created>1605783797080</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605783797080</updated>
+    </task>
+    <task id="LOCAL-00005" summary="5i5j数据入库">
+      <created>1605784116683</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1605784116683</updated>
+    </task>
+    <task id="LOCAL-00006" summary="过滤5i5j脏数据">
+      <created>1605842570129</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1605842570129</updated>
+    </task>
+    <task id="LOCAL-00007" summary="增加爬取字段">
+      <created>1605864307417</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605864307417</updated>
+    </task>
+    <task id="LOCAL-00008" summary="贝壳爬虫">
+      <created>1605864396765</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605864396765</updated>
+    </task>
+    <task id="LOCAL-00009" summary="清理">
+      <created>1606102656517</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606102656517</updated>
+    </task>
+    <task id="LOCAL-00010" summary="贝壳爬虫翻页">
+      <created>1606102670517</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606102670517</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="爬虫获取名门府二手房信息" />
+    <MESSAGE value="5i5j数据入库" />
+    <MESSAGE value="过滤5i5j脏数据" />
+    <MESSAGE value="增加爬取字段" />
+    <MESSAGE value="贝壳爬虫" />
+    <MESSAGE value="清理" />
+    <MESSAGE value="贝壳爬虫翻页" />
+    <option name="LAST_COMMIT_MESSAGE" value="贝壳爬虫翻页" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605836297596">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="175" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1605836297596" />
+    <state x="698" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606110604303">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="698" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1606110604303" />
+    <state x="451" y="421" width="1298" height="598" key="#xdebugger.evaluate" timestamp="1606123242681">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="224" y="442" key="#xdebugger.evaluate/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1605855838002" />
+    <state x="451" y="421" width="1298" height="598" key="#xdebugger.evaluate/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1606123242681" />
+    <state x="184" y="86" key="DiffContextDialog" timestamp="1605864424106">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="184" y="86" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1605864424106" />
+    <state x="790" y="282" key="FileChooserDialogImpl" timestamp="1606097549560">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="282" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1606097549560" />
+    <state width="1877" height="424" key="GridCell.Tab.0.bottom" timestamp="1607564105347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="370" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1605605138195" />
+    <state width="1877" height="559" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1606180813552" />
+    <state width="1877" height="424" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607564105347" />
+    <state width="1877" height="424" key="GridCell.Tab.0.center" timestamp="1607564105347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="370" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1605605138195" />
+    <state width="1877" height="559" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1606180813552" />
+    <state width="1877" height="424" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607564105347" />
+    <state width="1877" height="424" key="GridCell.Tab.0.left" timestamp="1607564105346">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="370" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1605605138195" />
+    <state width="1877" height="559" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1606180813552" />
+    <state width="1877" height="424" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607564105346" />
+    <state width="1877" height="424" key="GridCell.Tab.0.right" timestamp="1607564105347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="370" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1605605138195" />
+    <state width="1877" height="559" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1606180813552" />
+    <state width="1877" height="424" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607564105347" />
+    <state width="1877" height="424" key="GridCell.Tab.1.bottom" timestamp="1607564105347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="370" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1605605137991" />
+    <state width="1877" height="559" key="GridCell.Tab.1.bottom/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1606180813552" />
+    <state width="1877" height="424" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1607564105347" />
+    <state width="1877" height="424" key="GridCell.Tab.1.center" timestamp="1607564105347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="370" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1605605137991" />
+    <state width="1877" height="559" key="GridCell.Tab.1.center/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1606180813552" />
+    <state width="1877" height="424" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1607564105347" />
+    <state width="1877" height="424" key="GridCell.Tab.1.left" timestamp="1607564105347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="370" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1605605137991" />
+    <state width="1877" height="559" key="GridCell.Tab.1.left/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1606180813552" />
+    <state width="1877" height="424" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1607564105347" />
+    <state width="1877" height="424" key="GridCell.Tab.1.right" timestamp="1607564105347">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="370" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1605605137991" />
+    <state width="1877" height="559" key="GridCell.Tab.1.right/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1606180813552" />
+    <state width="1877" height="424" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1607564105347" />
+    <state x="461" y="164" key="SettingsEditor" timestamp="1606097592767">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1606097592767" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1606102581071">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1606102581071" />
+    <state width="968" height="518" key="XDebugger.FullValuePopup" timestamp="1606123004690">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="968" height="518" key="XDebugger.FullValuePopup/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1606123004690" />
+    <state x="662" y="118" width="607" height="804" key="find.popup" timestamp="1605783607967">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="662" y="118" width="607" height="804" key="find.popup/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1605783607967" />
+    <state x="628" y="307" key="git4idea.merge.GitPullDialog" timestamp="1606102577474">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="628" y="307" key="git4idea.merge.GitPullDialog/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1606102577474" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1605615590463">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1080@0.0.1920.1040" timestamp="1605615590463" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spiders/hzke.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spiders/hzke.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spiders/hzke.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spiders/hz5i5j.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="112" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spiders/hz5i5j.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="116" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/spiders/hz5i5j.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="118" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/mingmenfuSpider$hzke.coverage" NAME="hzke Coverage Results" MODIFIED="1605860076793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/spiders" />
+    <SUITE FILE_PATH="coverage/mingmenfuSpider$run.coverage" NAME="run Coverage Results" MODIFIED="1607599029729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/mingmenfuSpider$run__1_.coverage" NAME="run (1) Coverage Results" MODIFIED="1607599041791" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mingmenfuSpider" />
+  </component>
+</project>

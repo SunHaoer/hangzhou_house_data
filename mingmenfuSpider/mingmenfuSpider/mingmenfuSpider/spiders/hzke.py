@@ -2,13 +2,16 @@ import datetime
 import re
 
 import scrapy
+from utils.tool import get_community_name
 
 class HzkeSpider(scrapy.Spider):
     name = 'hzke'
     allowed_domains = ['ke.com']
     start_urls = [
         'https://hz.ke.com/ershoufang/c1820027546685962/',    # 名门府
-        'https://hz.ke.com/ershoufang/c188390937162697/'    # 春江悦茗
+        # 'https://hz.ke.com/ershoufang/c188390937162697/',    # 春江悦茗
+        'https://hz.ke.com/ershoufang/c187308876459783/',    # 华瑞晴庐
+        'https://hz.ke.com/ershoufang/c1820028731118580/'    # 微风之城
     ]
 
     def parse(self, response):
@@ -25,12 +28,15 @@ class HzkeSpider(scrapy.Spider):
         # 下一页
         if self.start_urls.__contains__(response.url):
             for href in hrefs:
-                href = response.urljoin(href.get())
-                print(href)
-                if href.endswith('/') == False:
-                    href = href + '/'
-                if self.start_urls.__contains__(href) == False:
-                    yield scrapy.Request(href, callback=self.parse)
+                try:
+                    href = response.urljoin(href.get())
+                    print(href)
+                    if href.endswith('/') == False:
+                        href = href + '/'
+                    if self.start_urls.__contains__(href) == False:
+                        yield scrapy.Request(href, callback=self.parse)
+                except Exception as e:
+                    print(e)
 
 
     def parse_info(self, response):
@@ -38,10 +44,7 @@ class HzkeSpider(scrapy.Spider):
         try:
             item['source'] = 'beike'
             community_str = response.xpath('//div[@class="intro clear"]').get()
-            if '名门府' in community_str:
-                item['community_name'] = '名门府'
-            elif '春江悦茗' in community_str:
-                item['community_name'] = '春江悦茗'
+            item['community_name'] = get_community_name(community_str)
             item['house_num'] = response.xpath('string(//div[@class="houseRecord"]/span[@class="info"])').get().split('\n')[0].strip()
 
             price_data = response.xpath('//div[@data-component="overviewIntro"]//div[@class="content"]/div[2]')
@@ -60,7 +63,7 @@ class HzkeSpider(scrapy.Spider):
                         item['floor'] = '中楼层'
                     elif '低' in info:
                         item['floor'] = '低楼层'
-                if '面积' in info:
+                if '建筑面积' in info:
                     item['area'] = self.get_info(info).replace('㎡', '')
 
             infos2 = info_data.xpath('.//div[@class="content"]')[1].xpath('.//li')
